@@ -354,7 +354,6 @@ contact-info-section
   ++++++++++++++++++++++++++++++++++ */
 
 .contact {
-  height: 100vh;
   background-color: #f6f5fb;
 }
 
@@ -390,4 +389,36 @@ input[type="tel"] {
   background-color: white;
   border-radius: 7px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.contact-us form button{
+  width: 100%;
+  padding: 12px;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-weight: bold;
+  font-size: larger;;
+}
+
+/* +++++++++++++++++++++++++++++++++
+gmap-section
+  ++++++++++++++++++++++++++++++++++ */
+.gmap{
+  background-color: black;
+}
+
+.map-content{
+  display: flex;
+  align-items: center;
+}
+
+/* +++++++++++++++++++++++++++++++++
+footer
+  ++++++++++++++++++++++++++++++++++ */
+footer{
+  background-color: #333;
+  padding: 2%;
 }
