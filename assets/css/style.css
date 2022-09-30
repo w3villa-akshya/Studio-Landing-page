@@ -38,7 +38,6 @@ header {
 
 nav .logo {
   font-size: x-large;
-  /* font-weight: bolder; */
 }
 
 .nav-link {
@@ -50,7 +49,6 @@ div li {
   padding-left: 1%;
   padding-right: 1%;
   font-family: Arial, Helvetica, sans-serif;
-  /* font-weight: bold;*/
 }
 
 header nav {
@@ -78,6 +76,7 @@ header nav .logo:hover {
   padding: 0;
   margin: auto;
 }
+  /* font-weight: bolder; */
 
 .nav-item {
   display: inline-block;
@@ -109,28 +108,9 @@ a.nav-link {
   banner
   ++++++++++++++++++++++++++++++++++ */
 
-/* .banner-container {
-  align-self: center;
-} */
-.banner {
-  /* vertical-align: middle; */
+.banner{
   display: flex;
   align-items: center;
-  height: 1000px;
-  margin-left: 10%;
-  /* margin-top: 50%; */
-}
-
-.banner-content-1 {
-  font-size: 170%;
-  font-weight: 550;
-  padding: 0%;
-}
-
-.banner-content-2 {
-  font-size: 600%;
-  font-weight: bold;
-  padding: 0%;
 }
 
 /* +++++++++++++++++++++++++++++++++
@@ -365,6 +345,7 @@ contact-info-section
     rgba(46, 42, 86, 1) 13%,
     rgba(73, 69, 117, 1) 100%
   );
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 input[type="text"],
@@ -391,7 +372,7 @@ input[type="tel"] {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.contact-us form button{
+.contact-us form button {
   width: 100%;
   padding: 12px;
   border-radius: 7px;
@@ -400,17 +381,17 @@ input[type="tel"] {
   margin-bottom: 16px;
   resize: vertical;
   font-weight: bold;
-  font-size: larger;;
+  font-size: larger;
 }
 
 /* +++++++++++++++++++++++++++++++++
 gmap-section
   ++++++++++++++++++++++++++++++++++ */
-.gmap{
+.gmap {
   background-color: black;
 }
 
-.map-content{
+.map-content {
   display: flex;
   align-items: center;
 }
@@ -418,7 +399,7 @@ gmap-section
 /* +++++++++++++++++++++++++++++++++
 footer
   ++++++++++++++++++++++++++++++++++ */
-footer{
+footer {
   background-color: #333;
   padding: 2%;
 }
