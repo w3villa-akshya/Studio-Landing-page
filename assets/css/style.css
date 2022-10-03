@@ -10,23 +10,22 @@ html {
   font-family: sans-serif;
 }
 
-
 /* +++++++++++++++++++++++++++++++++
   Custom classes
   ++++++++++++++++++++++++++++++++++ */
-.red-color{
+.red-color {
   color: #ff004a;
 }
-
+.grey-color {
+  color: grey;
+}
 
 /* +++++++++++++++++++++++++++++++++
   Header
   ++++++++++++++++++++++++++++++++++ */
 
 header {
-
   background-color: #333;
-
 }
 
 nav .logo {
@@ -69,7 +68,7 @@ header nav .logo:hover {
   padding: 0;
   margin: auto;
 }
-  /* font-weight: bolder; */
+/* font-weight: bolder; */
 
 .nav-item {
   display: inline-block;
@@ -101,8 +100,7 @@ a.nav-link {
   banner
   ++++++++++++++++++++++++++++++++++ */
 
-.banner{
-
+.banner {
   background-image: linear-gradient(
       to top,
       rgba(245, 246, 252, 0.52),
@@ -121,6 +119,54 @@ a.nav-link {
   align-items: center;
 }
 
+.banner-content-1 h4{
+  font-size: larger;
+}
+.banner-content-2 h1{
+  font-size:80px;
+}
+
+@media screen and (max-width: 468px){
+  /* .banner-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  .banner-content-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+  }
+  .banner-content-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+  }
+
+  .banner h1{
+    font-size: 64px;
+  }
+  .banner h4{
+    font-size: 30;
+  }
+
+  .card-parent{
+    position: relative;
+    top: -50px!important;
+  }
+
+  .banner h4{
+    text-align: center;
+  }
+
+  .banner h1{
+    text-align: center;
+  }
+
+}
+
 /* +++++++++++++++++++++++++++++++++
   cards
   ++++++++++++++++++++++++++++++++++ */
@@ -135,11 +181,17 @@ a.nav-link {
   height: 80px;
 }
 
-.card {
-  padding-top: 4%;
+.card-parent{
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
   position: relative;
-  padding-bottom: 3%;
+  top: -130px;
 }
+.card{
+  padding-top: 4%;
+}
+
 
 /* +++++++++++++++++++++++++++++++++
 easy-way
@@ -325,26 +377,42 @@ complaints-service-section
     url(../images/image15.jpeg);
   min-height: 100vh;
   max-width: 100%;
+
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .complaint-service-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6% 10%;
   border: #f2f2f2 solid;
-  width: 70%;
-  height: 80%;
-  padding: 10% 0%;
 }
 
+.com-ser{
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
 /* +++++++++++++++++++++++++++++++++
 contact-info-section
   ++++++++++++++++++++++++++++++++++ */
 
 .contact {
   background-color: #f6f5fb;
+}
+
+.contact i{
+  color: #827f94;
+}
+
+.contact span{
+  color: #827f94;
 }
 
 .contact-info {
