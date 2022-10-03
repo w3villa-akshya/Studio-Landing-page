@@ -10,30 +10,23 @@ html {
   font-family: sans-serif;
 }
 
-.custom-container {
-  width: 85%;
-  margin: auto;
+
+/* +++++++++++++++++++++++++++++++++
+  Custom classes
+  ++++++++++++++++++++++++++++++++++ */
+.red-color{
+  color: #ff004a;
 }
+
 
 /* +++++++++++++++++++++++++++++++++
   Header
   ++++++++++++++++++++++++++++++++++ */
 
 header {
-  background-image: linear-gradient(
-      to top,
-      rgba(245, 246, 252, 0.52),
-      rgba(109, 51, 53, 0.73)
-    ),
-    url(../images/image1.jpeg);
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
+
+  background-color: #333;
+
 }
 
 nav .logo {
@@ -67,7 +60,7 @@ header nav .logo {
 }
 
 header nav .logo:hover {
-  background-color: #333;
+  background-color: rgb(241, 239, 239);
   color: white;
   transition: 0.3s;
 }
@@ -95,7 +88,7 @@ header nav .logo:hover {
 }
 
 .nav-item a:hover {
-  background-color: #333;
+  background-color: rgb(226, 216, 216);
   color: white;
   transition: 0.3s;
 }
@@ -109,6 +102,21 @@ a.nav-link {
   ++++++++++++++++++++++++++++++++++ */
 
 .banner{
+
+  background-image: linear-gradient(
+      to top,
+      rgba(245, 246, 252, 0.52),
+      rgba(109, 51, 53, 0.73)
+    ),
+    url(../images/image1.jpeg);
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
   display: flex;
   align-items: center;
 }
@@ -121,8 +129,10 @@ a.nav-link {
   background-color: #ff004a;
   border-radius: 50%;
   display: flex;
-  object-fit: cover;
-  padding: 2%;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
 }
 
 .card {
