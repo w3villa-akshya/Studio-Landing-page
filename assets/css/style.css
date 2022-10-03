@@ -166,6 +166,10 @@ a.nav-link {
   .banner h1 {
     text-align: center;
   }
+  header{
+    position: initial !important;
+    background-color: rgba(109, 51, 53, 0.80) !important;
+  }
 }
 
 /* +++++++++++++++++++++++++++++++++
