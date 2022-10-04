@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 /*-------------------------------------------------- */
 
 html {
@@ -16,6 +18,7 @@ html {
 .red-color {
   color: #ff004a;
 }
+
 .grey-color {
   color: grey;
 }
@@ -32,6 +35,8 @@ header {
 
 nav .logo {
   font-size: x-large;
+  animation: zoomIn;
+  animation-duration: 3s;
 }
 
 .nav-link {
@@ -43,6 +48,8 @@ div li {
   padding-left: 1%;
   padding-right: 1%;
   font-family: Arial, Helvetica, sans-serif;
+  animation: flipOutX;
+  animation-duration: 2s;
 }
 
 header nav {
@@ -70,6 +77,7 @@ header nav .logo:hover {
   padding: 0;
   margin: auto;
 }
+
 /* font-weight: bolder; */
 
 .nav-item {
@@ -97,6 +105,15 @@ header nav .logo:hover {
 a.nav-link {
   font-size: 1.5rem;
 }
+/* *****************scroll-progress-bar****** */
+#scroll-progress {
+  position: relative;
+  top: 0;
+  width: 0%;
+  height: 5px;
+  background: red;
+  z-index: 10000;
+}
 
 /* +++++++++++++++++++++++++++++++++
   banner
@@ -123,23 +140,28 @@ a.nav-link {
 
 .banner-content-1 h4 {
   font-size: larger;
-}
-.banner-content-2 h1 {
-  font-size: 80px;
+  animation: bounce;
+  animation-duration: 3s;
 }
 
+.banner-content-2 h1 {
+  font-size: 80px;
+  animation: pulse;
+  animation-duration: 3s;
+}
+
+/*
+++++++++++++++++++++++++++++++++
+media-queries
++++++++++++++++++++++++++++++ */
 @media screen and (max-width: 468px) {
-  /* .banner-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
   .banner-content-1 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: large;
   }
+
   .banner-content-2 {
     display: flex;
     align-items: center;
@@ -150,6 +172,7 @@ a.nav-link {
   .banner h1 {
     font-size: 64px;
   }
+
   .banner h4 {
     font-size: 30;
   }
@@ -166,12 +189,12 @@ a.nav-link {
   .banner h1 {
     text-align: center;
   }
-  header{
+
+  header {
     position: initial !important;
-    background-color: rgba(109, 51, 53, 0.80) !important;
+    background-color: rgba(109, 51, 53, 0.73) !important;
   }
 }
-
 /* +++++++++++++++++++++++++++++++++
   cards
   ++++++++++++++++++++++++++++++++++ */
@@ -193,8 +216,11 @@ a.nav-link {
   position: relative;
   top: -130px;
 }
+
 .card {
   padding-top: 2%;
+  animation: shakeY;
+  animation-duration: 3s;
 }
 
 /* +++++++++++++++++++++++++++++++++
@@ -243,6 +269,7 @@ young-products
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /* transform: scale(1.3) rotate(5deg); */
 }
 
 .product-image-2 {
@@ -390,6 +417,7 @@ complaints-service-section
   align-items: center;
   justify-content: center;
 }
+
 .complaint-service-content {
   display: flex;
   align-items: center;
@@ -443,6 +471,7 @@ input[type="tel"] {
 .contact-form button {
   background-color: #2c2952;
 }
+
 .contact-us {
   background-color: white;
   border-radius: 7px;
@@ -480,6 +509,7 @@ footer {
   background-color: #333;
   padding: 2% 0;
 }
+
 .foo-con {
   display: flex;
   align-items: center;

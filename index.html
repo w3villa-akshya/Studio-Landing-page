@@ -60,7 +60,12 @@
         </div>
       </div>
     </nav>
+    <div id="scroll-progress"></div>
   </header>
+
+  <section class="scroll-bar">
+
+  </section>
 
   <!-- ----------------------------banner---------------------- -->
   <section class="banner">
@@ -530,6 +535,17 @@
         document.getElementById("navbar").style.backgroundColor = "transparent";
       }
     }
+  </script>
+  <script>
+    const scrollProgress = document.getElementById('scroll-progress');
+const height =
+  document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+window.addEventListener('scroll', () => {
+  const scrollTop =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+});
   </script>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
