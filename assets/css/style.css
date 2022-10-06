@@ -230,8 +230,6 @@ body.dark {
 
 .card {
   padding-top: 2%;
-  animation: shakeY;
-  animation-duration: 3s;
 }
 
 /* +++++++++++++++++++++++++++++++++
@@ -313,6 +311,7 @@ creative-ideas
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
 
 .creative-image-2 {
